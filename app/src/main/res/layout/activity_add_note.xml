@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:background="#FFFFFF"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <EditText
+        android:id="@+id/etTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/note_title"
+        android:importantForAutofill="no"
+        android:inputType="textMultiLine"
+        android:minHeight="48dp"
+        android:textSize="18sp"
+        tools:ignore="VisualLintTextFieldSize" />
+
+    <EditText
+        android:id="@+id/etContent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:autofillHints=""
+        android:gravity="top"
+        android:hint="Note Content"
+        android:inputType="text"
+        android:minHeight="48dp"
+        android:minLines="5"
+        android:textSize="16sp"
+        tools:ignore="HardcodedText,VisualLintTextFieldSize" />
+
+    <Button
+        android:id="@+id/btnSave"
+        android:text="@string/save_note"
+        android:backgroundTint="#03DAC5"
+        android:textColor="#000000"
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:ignore="VisualLintButtonSize" />
+
+</LinearLayout>
